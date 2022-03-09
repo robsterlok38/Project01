@@ -1,0 +1,198 @@
+@charset "utf-8"
+    
+/* 
+    Stylesheet
+    Author: Roberto Jimenez
+    Date: February 23, 2022
+    Filename: style.css
+*/
+
+/*body {
+    background-color: lightgray;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 95%; 
+    min-width: 960px; 
+    max-width: 640px;
+
+}*/
+
+/*--style--*/
+
+#rob {
+    display: inline;
+    float: left;
+    clear: both;
+    padding: 3px;
+    margin: 3px;
+}
+#rob {
+    background-color: black;
+    color: white;
+    width: 100%;
+    overflow: visible;
+    font-size: 32px;
+    text-align: center;
+}
+
+#horizontalNavigation {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+     
+}
+#horizontalNavigation li {
+    display: inline;
+        float: left;
+    font-size: 21px;
+}
+#horizontalNavigation li a {
+    display: block;
+    padding: 0;
+    margin: 10px
+}
+#leftcolumn {
+    display: block;
+    float: left;
+    border: 5px dotted black;
+    
+}
+
+/*body > #leftcolumn > img {
+    width: 200px;
+}*/
+img {
+    display: inline-block;
+    vertical-align: middle,
+    width: 200px;
+}
+
+#rightcolumn {
+    display: block;
+    float: left;
+    overflow: hidden;
+    border: 5px dotted black;
+}
+#rightcolumn ul {
+    list-style: none;
+    margin: auto;
+    }
+#leftcolumn ul {
+    list-style: none;
+    
+}
+
+
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 40px;
+}
+footer {
+    display: block;
+    float: left;
+    clear: both;
+    text-align: center;
+}
+
+
+/*--background--*/
+
+body {
+    background-color: lightgray;
+    margin: auto;
+
+    width: 900px;
+}
+#horizontalNavigation {
+    background-color: black;    
+    
+}
+#horizontalNavigation a {
+    color: white;
+}
+footer {
+    background-color: black;
+    color: white;
+}
+h4 {
+    color: white
+}
+
+/*--fontStyles--*/
+
+h1 {
+    font-family: sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+p {
+    font-family: cursive;
+    font-size: 18px;
+    float: left;
+    padding: 9PX;
+    margin: 9PX;
+}
+ol > li {
+    font-family: cursive;
+    text-align: center;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 31px;
+    padding: 2px
+}
+
+#rightcolumn li {
+    font-size: 18px;
+    font-family: cursive;
+}
+#leftcolumn li{
+    float:left;
+    clear: both;
+    overflow: hidden;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*---grid----*/
+
+body {
+        
+    display: grid;
+      
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 18% 1fr 25%;
+    
+    grid-gap: 15px;
+}
+
+body > #horizontalNavigation {
+    grid-row: 1;
+    grid-column: 1 / -1;
+}
+#rightcolumn {
+      
+    display: grid;
+    
+    grid-template-rows: 1fr 1fr;
+}
+#leftcolumn {
+    grid-row: 2;
+    grid-column: 1/-2;
+}
+#rightcolumn {
+    grid-row: 2;
+    grid-column: 2/ -2;
+
+}
+
+footer {
+    grid-row: 3;
+    grid-column: 1 / -1;
+}
+
